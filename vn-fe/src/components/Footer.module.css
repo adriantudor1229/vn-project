@@ -1,0 +1,40 @@
+.footer {
+  background: var(--footer-bg);
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  margin-top: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.links {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.links a {
+  color: var(--link);
+}
+
+.links a:hover {
+  color: var(--link-hover);
+}
+
+.sep {
+  margin: 0 0.5rem;
+  color: var(--text-muted);
+}
+
+.memorial {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  opacity: 0.8;
+}

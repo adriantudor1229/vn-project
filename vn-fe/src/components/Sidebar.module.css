@@ -1,0 +1,67 @@
+.sidebar {
+  width: 200px;
+  min-height: 100vh;
+  background: var(--bg-blend);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0 1.25rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.logoAccent {
+  color: var(--accent);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.sectionLabel {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  padding: 0.4rem 1.25rem;
+}
+
+.navLink {
+  padding: 0.4rem 1.25rem;
+  font-size: 0.82rem;
+  color: var(--link);
+  transition: all 0.15s ease;
+  border-left: 2px solid transparent;
+}
+
+.navLink:hover {
+  background: var(--bg-box);
+  color: var(--link-hover);
+  border-left-color: var(--accent);
+}
+
+.sidebarFooter {
+  margin-top: auto;
+  padding: 1rem 1.25rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.footerText {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
