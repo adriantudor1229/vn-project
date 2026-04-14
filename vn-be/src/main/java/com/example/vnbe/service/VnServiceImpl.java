@@ -25,7 +25,7 @@ public class VnServiceImpl implements VnService {
 
     @Override
     public VnDTO findById(String id) {
-        Vn vn = vnRepository.findById(id)
+        Vn vn = vnRepository.findByIdWithTitles(id)
                 .orElseThrow(() -> new RuntimeException("VN not found:" + id));
         return vnMapper.toDto(vn);
     }

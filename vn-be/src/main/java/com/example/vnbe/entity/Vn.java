@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Table(name = "vn")
 @Data
@@ -17,6 +19,9 @@ public class Vn {
     @Id
     @Column(name = "id", nullable = false)
     private String id;
+
+    @OneToMany(mappedBy = "vn", fetch = FetchType.LAZY)
+    private List<VnTitles> titles;
 
     @Column(name = "image")
     private String image;
