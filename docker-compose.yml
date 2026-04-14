@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: vndb
+      POSTGRES_USER: vndb
+      POSTGRES_PASSWORD: vndb
+    ports:
+      - "5433:5432"
+    volumes:
+      - vndb-data:/var/lib/postgresql/data
+    shm_size: 512mb
+
+volumes:
+  vndb-data:
